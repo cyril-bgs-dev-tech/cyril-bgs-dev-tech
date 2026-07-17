@@ -16,7 +16,7 @@ Reconversion armée → commerce → data science. Je construis des systèmes ML
 
 - ⚙️ **Vigilance** — plateforme de détection d'anomalies temps réel : DAG event-driven 9 workers (Redis, Docker), 3 canaux de détection décorrélés, cycle de vie d'alarme en épisode unique, cockpit Streamlit 40+ pages — [code](https://github.com/cyril-bgs-dev-tech/vigilance) · [fiche projet](https://cyril-bgs-dev-tech.github.io/Portfolio/projets_MLOps_Vigilancy/)
 - 🔬 **Benchmarks de reproduction AD** — ADBench (tabulaire) & TSB-AD (séries temporelles) : reproduire exactement les scores publiés avant de prétendre les battre — VUS-PR, point-adjust banni, validation LODO — [anomaly_tabular](https://github.com/cyril-bgs-dev-tech/anomaly_tabular) · [anomaly_tsad](https://github.com/cyril-bgs-dev-tech/anomaly_tsad) (PaAno ICLR'26 certifié **#1 TSB-AD**)
-- 🏆 **Kaggle** — 35+ compétitions, 4 top 1% mondial (meilleur rang : #13/1757)
+- 🏆 **Kaggle** — 35+ compétitions, 3 top 1% mondial (meilleur rang : #14/3022)
 
 ## 🛠️ Stack
 
