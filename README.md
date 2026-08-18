@@ -14,13 +14,7 @@ Reconversion armée → commerce → data science. Je construis des systèmes ML
 
 ## 🔭 En ce moment
 
-> **🚧 Mise à jour en cours** — le dépôt **correction-previsions-qualite-air** est en cours
-> de publication : le code et les rapports sont visibles, les pages de restitution HTML
-> (cartes, champs spatialisés, cartes de chaleur) arrivent sous peu. Les autres projets
-> ci-dessous sont **complets et consultables**.
-
-
-- 🌍 **Correction des prévisions de qualité de l'air** — post-traitement statistique de l'ensemble **CAMS Europe** aux stations françaises : 36 mois, **29,1 M d'enregistrements**, 4 polluants. Évaluation en **double aveugle** (station *et* mois cachés) et en conditions d'exploitation. Actuellement : intégration d'un second modèle de chimie indépendant (**NASA GEOS-CF**) et champs spatialisés régionaux — [code](https://github.com/cyril-bgs-dev-tech/correction-previsions-qualite-air) *(publication en cours)*
+- 🌍 **Correction des prévisions de qualité de l'air** — post-traitement de **CAMS Europe** aux stations françaises : 36 mois, 28 M d'enregistrements, 4 polluants. Le modèle corrige **là où il n'y a aucune station**, et c'est ainsi qu'il est évalué — station *et* mois cachés ensemble : **39,6 % d'erreur en moins sur le NO₂**. Brut, le produit européen ne passe le critère réglementaire **FAIRMODE** que sur 41,4 % des stations NO₂ ; corrigé, **96,2 %** — [code](https://github.com/cyril-bgs-dev-tech/correction-previsions-qualite-air) · [dossier, 63 pages](https://github.com/cyril-bgs-dev-tech/correction-previsions-qualite-air/blob/main/reports/figures/presentation_atmo.pdf)
 - ⚙️ **Vigilance** — plateforme de détection d'anomalies temps réel : DAG event-driven 9 workers (Redis, Docker), 3 canaux de détection décorrélés, cycle de vie d'alarme en épisode unique, cockpit Streamlit 40+ pages — [code](https://github.com/cyril-bgs-dev-tech/vigilance) · [fiche projet](https://cyril-bgs-dev-tech.github.io/Portfolio/vigilance/)
 - 🕵️ **Aegis-RCA** — agent LLM local de diagnostic de causes racines pour Vigilance : RAG sur procédures, sandbox d'auto-correction, décisions d'architecture mesurées (pas juste supposées) — [code](https://github.com/cyril-bgs-dev-tech/aegis-rca) · [fiche projet](https://cyril-bgs-dev-tech.github.io/Portfolio/aegis-rca/)
 - 🔬 **Benchmarks de reproduction AD** — ADBench (tabulaire) & TSB-AD (séries temporelles) : reproduire exactement les scores publiés avant de prétendre les battre — VUS-PR, point-adjust banni, validation LODO — [anomaly_tabular](https://github.com/cyril-bgs-dev-tech/anomaly_tabular) · [anomaly_tsad](https://github.com/cyril-bgs-dev-tech/anomaly_tsad) (PaAno ICLR'26 certifié **#1 TSB-AD**)
@@ -31,7 +25,7 @@ Reconversion armée → commerce → data science. Je construis des systèmes ML
 
 | projet | état | ce qui bouge |
 |---|---|---|
-| **Qualité de l'air** | 🚧 publication en cours | second modèle indépendant (GEOS-CF), champs spatialisés France + régions |
+| **Qualité de l'air** | ✅ visible | dossier de 63 pages, protocole en double aveugle, horizon réglementaire 2030 |
 | **Vigilance** | ✅ visible | plateforme MLOps temps réel, 9 workers, cockpit 40 pages |
 | **Aegis-RCA** | ✅ visible | agent LLM local de diagnostic, RAG sur procédures |
 | **anomaly_tabular / anomaly_tsad** | ✅ visible | reproductions ADBench et TSB-AD |
